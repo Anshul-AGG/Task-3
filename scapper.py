@@ -37,7 +37,7 @@ def scrape_headlines():
 
         else:
             print(
-                "❌ Error: Could not find headline elements with the specified class."
+                "Error: Could not find headline elements with the specified class."
             )
 
         with open(FILE_NAME, "w", encoding="utf-8") as f:
@@ -49,7 +49,7 @@ def scrape_headlines():
         print(f"Headlines saved to: {os.path.abspath(FILE_NAME)}")
 
     except Exception as e:
-        print(f"❌ An unexpected error occurred: {e}")
+        print(f" An unexpected error occurred: {e}")
 
 
 if __name__ == "__main__":
